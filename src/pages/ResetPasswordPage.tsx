@@ -60,7 +60,7 @@ const ResetPasswordPage = () => {
   const footerContent = (
     <p>
       Remember your password?{' '}
-      <Link to="/" className="font-semibold text-blue-600 hover:underline">
+      <Link to="/" className="font-semibold text-primary hover:underline">
         Log In
       </Link>
     </p>
