@@ -52,7 +52,7 @@ const ForgotPasswordPage = () => {
       footer={
         <p>
           Remembered your password?{' '}
-          <Link to="/" className="font-semibold text-blue-600 hover:underline">
+          <Link to="/" className="font-semibold text-primary hover:underline">
             Back to Login
           </Link>
         </p>
@@ -60,16 +60,16 @@ const ForgotPasswordPage = () => {
     >
       <div className="space-y-4">
         {formState !== 'success' && (
-          <p className="text-sm text-gray-600">
+          <p className="text-sm text-muted-foreground">
             No problem. Enter your email address below and we will send you a link to reset your password.
           </p>
         )}
 
         {formState === 'success' && (
-          <Alert variant="default" className="bg-green-50 border-green-200">
-             <Mail className="h-4 w-4 text-green-600" />
-            <AlertTitle className="text-green-800">Check your inbox!</AlertTitle>
-            <AlertDescription className="text-green-700">
+          <Alert variant="default" className="border-success text-success">
+             <Mail className="h-4 w-4" />
+            <AlertTitle>Check your inbox!</AlertTitle>
+            <AlertDescription>
               A password reset link has been sent to the email address you provided.
             </AlertDescription>
           </Alert>
@@ -97,7 +97,7 @@ const ForgotPasswordPage = () => {
                 disabled={formState === 'loading'}
               />
               {form.formState.errors.email && (
-                <p className="text-sm text-red-600">{form.formState.errors.email.message}</p>
+                <p className="text-sm text-destructive">{form.formState.errors.email.message}</p>
               )}
             </div>
             <Button type="submit" className="w-full" disabled={formState === 'loading'}>
