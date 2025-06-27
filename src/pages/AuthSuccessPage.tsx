@@ -27,7 +27,7 @@ const AuthSuccessPage: React.FC = () => {
       <main className="flex-grow flex items-center justify-center p-4">
         <Card className="w-full max-w-md shadow-lg">
           <CardHeader className="items-center text-center">
-            <CheckCircle className="h-16 w-16 text-green-500 mb-4" />
+            <CheckCircle className="h-16 w-16 text-success mb-4" />
             <CardTitle className="text-2xl">Authentication Successful!</CardTitle>
             <CardDescription>
               Welcome! You have successfully logged in.
