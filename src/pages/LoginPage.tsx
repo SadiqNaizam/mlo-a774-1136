@@ -45,7 +45,7 @@ const LoginPage = () => {
   const footerContent = (
     <p>
       Don&apos;t have an account?{' '}
-      <Link to="/sign-up" className="font-semibold text-blue-600 hover:underline">
+      <Link to="/sign-up" className="font-semibold text-primary hover:underline">
         Sign up
       </Link>
     </p>
@@ -79,7 +79,7 @@ const LoginPage = () => {
               <Label htmlFor="password">Password</Label>
               <Link
                 to="/forgot-password"
-                className="text-sm font-medium text-blue-600 hover:underline"
+                className="text-sm font-medium text-primary hover:underline"
               >
                 Forgot Password?
               </Link>
