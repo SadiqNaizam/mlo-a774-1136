@@ -52,7 +52,7 @@ const SignUpPage = () => {
       footer={
         <span>
           Already have an account?{' '}
-          <Link to="/" className="text-blue-600 hover:underline">
+          <Link to="/" className="text-primary hover:underline">
             Log In
           </Link>
         </span>
